@@ -146,7 +146,7 @@ echo -e "  ${GREEN}✓${NC} SSH: 3 başarısız → 1 saat ban | Nginx: 5 flood 
 # ═══════════════════════════════════════════
 echo -e "${GREEN}[6/12]${NC} Node.js kuruluyor..."
 if ! command -v node &> /dev/null; then
-  curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+  curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
   apt install -y -qq nodejs
 fi
 echo -e "  Node.js $(node -v)"
